@@ -28,6 +28,8 @@ int main() {
         std::cout.write(buffer, bytesReceived);
     }
 
+    std::cout << "" << std::endl;
+
     close(client_socket);
     close(server);
     return 0;
