@@ -1,6 +1,14 @@
 import socket
 import struct # empactor e desempactor pagotes de dados bionarios
 
+#  +--------+--------+--------+--------+
+#  |          source address           |
+#  +--------+--------+--------+--------+
+#  |        destination address        |
+#  +--------+--------+--------+--------+
+#  |  zero  |protocol|   UDP length    |    
+#  +--------+--------+--------+--------+
+
 def checksum(data: bytes) -> int:
     # Calcular o checksum
     
